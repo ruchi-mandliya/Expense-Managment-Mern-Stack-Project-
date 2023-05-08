@@ -20,12 +20,12 @@ const Register = () => {
     }
   };
 
-  //prevent for login user
-  // useEffect(() => {
-  //   if (localStorage.getItem("user")) {
-  //     navigate("/");
-  //   }
-  // }, [navigate]);
+  // prevent for login user
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      navigate("/");
+    }
+  }, [navigate]);
   return (
     <>
       <div className="register-page ">
